@@ -1,6 +1,7 @@
 window.addEventListener('DOMContentLoaded', function() {
   document.querySelector('#burger').addEventListener('click', function(){
-    document.querySelector('#menu').classList.toggle('active')
+    document.querySelector('#menu').classList.toggle('active');
+    document.body.classList.toggle('scroll-lock');
   })
 });
 
@@ -232,7 +233,8 @@ document.addEventListener("DOMContentLoaded", function () {
     function init() {
       var myMap = new ymaps.Map("myMap", {
         center: [55.758468, 37.601088],
-        zoom: 16
+        zoom: 16,
+        controls: ['smallMapDefaultSet']
       });
   
       var placemark = new ymaps.Placemark([55.758468, 37.601088], {}, {
@@ -243,5 +245,6 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   
       myMap.geoObjects.add(placemark);
+      myMap.behaviors.disable('scrollZoom')
     }
 });
