@@ -2698,7 +2698,6 @@ input:focus:-ms-input-placeholder { color:transparent; }
     }
 
     .gallery__container{
-        
         min-height: 890px;
         background-image: url(../img/gallery-background-768px.jpg);
         flex-direction: column;
@@ -2862,10 +2861,6 @@ input:focus:-ms-input-placeholder { color:transparent; }
         padding: 0;
     }
 
-    .header__burger-nav-list{
-        margin-bottom: 263px;
-    }
-
     .header__link{
         font-size: 16px;
         line-height: 22px;
@@ -2876,9 +2871,14 @@ input:focus:-ms-input-placeholder { color:transparent; }
         height: 15px;
     }
 
+    .header__burger-nav-list{
+        margin-bottom: 50px;
+    }
+
     .header__burger-login{
         min-height: 40px;
         max-width: 115px;
+        margin-bottom: 300px;
         font-size: 12px;
         line-height: 16px;
     }
